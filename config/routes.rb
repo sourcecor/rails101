@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  root 'groups#index' #表示把 app/views/groups/index.htm.erb當首頁
+  resources :groups  #表示新增 groups的 routes
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

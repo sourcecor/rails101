@@ -8,7 +8,12 @@
 </head>
 <body>
 
-<%= yield %>
+<div class = "container-fluid">
+  <%= render "common/navbar" %>
+  <%= yield %>  <! 把原本的yield移到這裡 >
+</div>
+
+<%= render "common/footer" %>
 
 </body>
 </html>
